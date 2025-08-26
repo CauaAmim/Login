@@ -64,7 +64,7 @@ body {
 
 .caixa-formulario input {
     width: 100%;
-    height: 50%;
+    height: 40px;
     border: none;
     border-radius: 10px;
     outline: none;
@@ -74,10 +74,17 @@ body {
     padding: 0 20px;
 }
 
+.caixa-formulario input:focus {
+    opacity: 0.6;
+    
+}
+
+
 .caixa-formulario input::placeholder {
     color:  rgba(255, 255, 255, 0.6);
     
 }
+
 
 .caixa-formulario i {
     position: absolute;
@@ -85,6 +92,7 @@ body {
     font-size: 17px;
     top: 25% ;
 }
+
 
 .lembrar-lembrar-esqueci {
     display: flex;
@@ -107,6 +115,11 @@ body {
 
 .lembrar-lembrar-esqueci a:hover{
     text-decoration: underline;
+}
+
+.lembrar-lembrar-esqueci a:active {
+    color: #2a2830;
+    transition: 0.3s;
 }
 
 button {
@@ -142,4 +155,9 @@ button:hover {
 
 .link-registro a:hover {
     text-decoration: underline;
+}
+
+.link-registro a:active {
+    color: #2a2830;
+    transition: 0.2s;
 }
